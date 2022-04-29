@@ -114,7 +114,7 @@ if [[ "${MQT_DEP}" == "OCA" ]] ; then
     sed -i 's/^requests\=\=/requests[security]\=\=/g' ${ODOO_PATH}/requirements.txt
 
     pip install -q -r ${ODOO_PATH}/requirements.txt
-    pip install -q QUnitSuite
+    #pip install -q QUnitSuite
 
     echo "Getting addons dependencies"
     clone_oca_dependencies
